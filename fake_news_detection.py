@@ -312,7 +312,7 @@ print('Test set\n  Loss: {:0.3f}\n  Accuracy: {:0.3f}'.format(accr[0],accr[1]))
 
 model.save('/content/drive/My Drive/Simbolo Project Bootcamp/Fake news detection/multi_model')
 
-ls '/content/drive/My Drive/Simbolo Project Bootcamp/Fake news detection'
+#ls '/content/drive/My Drive/Simbolo Project Bootcamp/Fake news detection'
 
-new_model = tf.keras.models.load_model('/content/drive/My Drive/Simbolo Project Bootcamp/Fake news detection/multi_model')
+#new_model = tf.keras.models.load_model('/content/drive/My Drive/Simbolo Project Bootcamp/Fake news detection/multi_model')
 
