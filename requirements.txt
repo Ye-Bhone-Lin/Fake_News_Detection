@@ -2,5 +2,5 @@ pandas
 numpy
 tensorflow
 nltk
-sklearn
+scikit-learn
 streamlit
