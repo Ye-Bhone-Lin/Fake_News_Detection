@@ -69,8 +69,7 @@ MAX_SEQUENCE_LENGTH = 400
 EMBEDDING_DIM = 100
 tokenizer = Tokenizer(num_words=MAX_NB_WORDS, lower=True,char_level=False,filters='!"#$%&()*+,-./:;<=>?@[\]^_`{|}~')
 tokenizer.fit_on_texts(df['stopwords'])
-filename = 'multi_model'
-new_model = tf.keras.models.load_model(filename)
+new_model = tf.keras.models.load_model('multi_model/saved_model.pb')
 def final(text):
   list_1 = []
   list_1.append(text)
