@@ -8,6 +8,7 @@ from sklearn.ensemble import RandomForestClassifier
 import streamlit as st
 import nltk
 from nltk.corpus import stopwords
+nltk.download('stopwords')
 import tensorflow as tf
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
