@@ -58,7 +58,6 @@ with st.form('Classification'):
         st.write(test_msg)
         st.write(clf.predict(vectorization.transform([text])))
 
-new_model = tf.keras.models.load_model('multi_model')
 STOPWORDS = set(stopwords.words('english'))
 def remove_stopword(text):
   text = ' '.join(word for word in text.split() if word not in STOPWORDS)
@@ -69,6 +68,7 @@ MAX_SEQUENCE_LENGTH = 400
 EMBEDDING_DIM = 100
 tokenizer = Tokenizer(num_words=MAX_NB_WORDS, lower=True,char_level=False,filters='!"#$%&()*+,-./:;<=>?@[\]^_`{|}~')
 tokenizer.fit_on_texts(df['stopwords'])
+new_model = tf.keras.models.load_model('multi_model')
 def final(text):
   list_1 = []
   list_1.append(text)
